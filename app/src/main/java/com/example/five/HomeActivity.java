@@ -26,6 +26,8 @@ public class HomeActivity extends AppCompatActivity{
         setContentView(R.layout.fragment_home);
         FragmentManager manager = getSupportFragmentManager();
         Fragment fragment = manager.findFragmentById(R.id.frame);
+
+
     }
 
 

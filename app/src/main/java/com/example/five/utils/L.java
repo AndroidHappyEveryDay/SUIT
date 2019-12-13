@@ -18,4 +18,7 @@ public class L {
         }
         Log.d(TAG, String.format(msg,args));
     }
+
+    public static void d() {
+    }
 }

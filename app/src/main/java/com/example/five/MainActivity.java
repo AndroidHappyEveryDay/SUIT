@@ -1,29 +1,25 @@
 package com.example.five;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import com.example.five.ui.home.HomeFragment;
+import com.example.five.ui.star.RecyclerAdapter;
+import com.example.five.ui.star.StarViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private int SCAN_REQUEST_CODE=200;
     private int SELECT_IMAGE_REQUEST_CODE=201;
